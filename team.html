@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the team behind Zeo Bot. Discover the roles and contributions of the owner, testers, and helpers.">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyratata.github.io/Zeo/team/">
+    <meta property="og:site_name" content="Zeo Bot">
+    <meta property="og:title" content="Meet the Zeo Bot Team">
+    <meta property="og:description" content="Learn about the key contributors to Zeo Bot, including the owner, testers, and helpers.">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/img/red.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boyratata/Vancex.github.io@main/css/site.css">
+    <style>
+        body {
+            background: url('https://github.com/boyratata/privacy-policy/blob/main/wallxx.png?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #e2e8f0; /* Text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(45, 62, 80, 0.9); /* Darker semi-transparent background */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: relative;
+        }
+        h1, h2, h3 {
+            color: #cbd5e0;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .contributor {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 10px;
+            background: rgba(45, 62, 80, 0.8); /* Slightly different background */
+            border-radius: 8px;
+        }
+        .contributor img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+        .contributor .details {
+            color: #cbd5e0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: rgba(0, 255, 255, 0.7);
+            border: 2px solid rgba(0, 255, 255, 0.7);
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
+            backdrop-filter: blur(4px);
+        }
+        .button:hover {
+            background-color: rgba(0, 255, 255, 0.9);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+        }
+        .nav-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 255, 255, 0.7);
+            border: 2px solid rgba(0, 255, 255, 0.7);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 10px;
+            backdrop-filter: blur(4px);
+        }
+        .nav-button:hover {
+            background-color: rgba(0, 255, 255, 0.9);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+        }
+        .page-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 255, 255, 0.7);
+            border: 2px solid rgba(0, 255, 255, 0.7);
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+        .page-button:hover {
+            background-color: rgba(0, 255, 255, 0.9);
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+        }
+        .page-button.next {
+            background: url('https://img.icons8.com/ios-filled/50/ffffff/arrow.png') no-repeat center center;
+            background-size: 24px 24px;
+        }
+        .page-button.prev {
+            background: url('https://img.icons8.com/ios-filled/50/ffffff/arrow.png') no-repeat center center;
+            background-size: 24px 24px;
+            transform: rotate(180deg);
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://boyratata.github.io/Zeo/team/" class="nav-button">Home</a>
+    <a href="https://boyratata.github.io/Zeo/" class="nav-button">Home</a>
+    <div class="container">
+        <header>
+            <h1 class="text-4xl text-center">Meet the Zeo Bot Team</h1>
+        </header>
+        <main>
+            <!-- Page 1 -->
+            <div class="page active" id="page1">
+                <section>
+                    <h2 class="text-2xl">Owner & Lead Developer</h2>
+                    <div class="contributor">
+                        <img src="https://github.com/boyratata/Vancex.github.io/blob/main/img/admin.png?raw=true" alt="Admin's Profile Picture">
+                        <div class="details">
+                            <h3>Admin</h3>
+                            <p>Owner and Lead Developer of Zeo Bot. Responsible for the overall development and design of the bot.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-8">
+                    <h2 class="text-2xl">Testers</h2>
+                    <div class="contributor">
+                        <img src="https://github.com/boyratata/Vancex.github.io/blob/main/img/altan.png?raw=true" alt="Altan's Profile Picture">
+                        <div class="details">
+                            <h3>Altan</h3>
+                            <p>One of the first testers of Zeo Bot. Provided valuable feedback and insights during the initial stages.</p>
+                        </div>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://github.com/boyratata/Vancex.github.io/blob/main/img/bella.png?raw=true" alt="Bella's Profile Picture">
+                        <div class="details">
+                            <h3>Bella</h3>
+                            <p>Another early tester who helped refine the bot and ensure its features worked as intended.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Page 2 -->
+            <div class="page" id="page2">
+                <section class="mt-8">
+                    <h2 class="text-2xl">Helpers</h2>
+                    <div class="contributor">
+                        <img src="https://github.com/boyratata/Vancex.github.io/blob/main/img/altan.png?raw=true" alt="Altan's Profile Picture">
+                        <div class="details">
+                            <h3>Altan</h3>
+                            <p>Helper who has continued to support and assist with the development and maintenance of Zeo Bot.</p>
+                        </div>
+                    </div>
+                    <div class="contributor">
+                        <img src="https://github.com/boyratata/Vancex.github.io/blob/main/img/bella.png?raw=true" alt="Bella's Profile Picture">
+                        <div class="details">
+                            <h3>Bella</h3>
+                            <p>Helper who has contributed significantly to improving Zeo Bot and assisting with its various features.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="mt-8 text-center text-sm text-neutral-400">
+            <p>© 2024 Zeo Bot. All rights reserved.</p>
+        </footer>
+        <button class="page-button prev" onclick="changePage(-1)">‹</button>
+        <button class="page-button next" onclick="changePage(1)">›</button>
+    </div>
+    <script>
+        let currentPage = 1;
+
+        function changePage(direction) {
+            const pages = document.querySelectorAll('.page');
+            const totalPages = pages.length;
+
+            pages[currentPage - 1].classList.remove('active');
+
+            currentPage += direction;
+
+            if (currentPage < 1) currentPage = totalPages;
+            if (currentPage > totalPages) currentPage = 1;
+
+            pages[currentPage - 1].classList.add('active');
+        }
+    </script>
+</body>
+</html>

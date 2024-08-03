@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zeo Bot is an advanced automod bot for Discord that manages server moderation and handles swearing with unique responses.">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyratata.github.io/Zeo/">
+    <meta property="og:site_name" content="Zeo Bot">
+    <meta property="og:image" content="https://boyratata.github.io/privacy-policy/img/zeo-icon.png">
+    <meta property="og:title" content="Invite Zeo Bot to Your Server">
+    <meta property="og:description" content="Get your unique invite link for Zeo Bot, an automod bot that manages server moderation, deletes swearing messages, and roasts users who don't follow the rules.">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/img/red.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boyratata/Vancex.github.io@main/css/site.css">
+    <style>
+        body {
+            background: url('https://github.com/boyratata/privacy-policy/blob/main/wallxx.png?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #e2e8f0; /* Text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative; /* For positioning the buttons */
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px;
+            padding: 20px;
+            background: rgba(45, 62, 80, 0.9); /* Darker semi-transparent background */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
+            backdrop-filter: blur(10px);
+        }
+        h1, h2, h3 {
+            color: #cbd5e0;
+            margin-bottom: 1rem; /* Spacing below headings */
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem; /* Spacing below paragraphs */
+        }
+        ul {
+            margin-bottom: 1rem; /* Spacing below lists */
+            padding-left: 1.5rem; /* Indentation for lists */
+        }
+        a {
+            color: #38b2ac;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #319795;
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: rgba(0, 255, 255, 0.7); /* Semi-transparent cyan */
+            border: 2px solid rgba(0, 255, 255, 0.7); /* Same color as background */
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem; /* Spacing above button */
+            margin-bottom: 1rem;  /* Spacing above button */
+            backdrop-filter: blur(4px); /* Blur effect */
+        }
+        .button:hover {
+            background-color: rgba(0, 255, 255, 0.9); /* More opaque on hover */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Slightly stronger blur effect on hover */
+        }
+        .embed-container {
+            margin-top: 1rem; /* Spacing above the embed container */
+            padding: 1rem;
+            background: rgba(45, 62, 80, 0.9); /* Darker semi-transparent background */
+            border-radius: 8px;
+            border: 1px solid rgba(45, 62, 80, 0.8); /* Matching border color */
+            display: none; /* Initially hidden */
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .embed-container.show {
+            display: block; /* Show when .show class is added */
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .embed-container.fade-out {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .embed-container.slide-down {
+            animation: slideDown 0.5s ease-out;
+        }
+        .embed-container.slide-up {
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+        }
+        .nav-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 255, 255, 0.7); /* Semi-transparent cyan */
+            border: 2px solid rgba(0, 255, 255, 0.7); /* Same color as background */
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 10px; /* Space between buttons */
+            backdrop-filter: blur(4px); /* Blur effect */
+        }
+        .nav-button:hover {
+            background-color: rgba(0, 255, 255, 0.9); /* More opaque on hover */
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Slightly stronger blur effect on hover */
+        }
+        .nav-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 10px; /* Space between the buttons */
+        }
+    </style>
+</head>
+<body>
+    <a href="https://boyratata.github.io/Zeo/" class="nav-button">Home</a>
+    <a href="https://boyratata.github.io/Zeo/Team" class="nav-button">Contributors</a> <!-- Update the href with the actual link to the Contributors page when available -->
+    <div class="container fade-in">
+        <header>
+            <h1 class="text-4xl text-center">Invite Zeo Bot to Your Server 🚀</h1>
+        </header>
+        <main>
+            <section>
+                <h2 class="text-2xl">What is Zeo Bot? 🤖</h2>
+                <p class="slide-up">Zeo Bot is your ultimate solution for a well-managed and fun Discord server! 🌟 This powerful automod bot takes care of moderating conversations, automatically deletes inappropriate messages, and even adds a bit of fun by roasting repeat offenders who break the rules after two warnings. 🔥</p>
+            </section>
+            <section class="mt-8">
+                <h2 class="text-2xl">Features 💥</h2>
+                <ul class="slide-up">
+                    <li>Automated moderation to keep your server clean and welcoming. 🛡️</li>
+                    <li>Instant message deletion for those pesky inappropriate words. 🚫</li>
+                    <li>Unique and playful roasting responses for repeat offenders. 😆</li>
+                    <li>Customizable settings tailored to fit your server's vibe. ⚙️</li>
+                </ul>
+            </section>
+            <section class="mt-8">
+                <h2 class="text-2xl">How to Invite Zeo Bot 📩</h2>
+                <p class="slide-up">Ready to bring Zeo Bot into your server? Click the button below to generate your unique invite link. Follow the easy steps to add Zeo Bot and unleash its awesome features on your server! 🌐</p>
+                <button id="generate-link" class="button">Generate Invite Link</button>
+                <div id="invite-link-container" class="embed-container"></div>
+            </section>
+            <section class="mt-8">
+                <h2 class="text-2xl">Contact Us 📞</h2>
+                <p class="slide-up">Got questions or need support? Reach out to us at <a href="https://discord.com/users/1218777412364406906" target="_blank">our Discord profile</a> and we'll be happy to help! 💬</p>
+            </section>
+        </main>
+        <footer class="mt-8 text-center text-sm text-neutral-400">
+            <p>© 2024 Zeo Bot. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('generate-link').addEventListener('click', function() {
+            const clientId = '1262780946210619401'; // Your bot's client ID
+            const permissions = '8'; // Full permissions
+            const scope = 'bot'; // Bot scope
+            const state = Math.random().toString(36).substring(2, 15); // Generate a unique state parameter
+            
+            const inviteLink = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}&state=${state}`;
+            
+            const linkContainer = document.getElementById('invite-link-container');
+
+            if (linkContainer.classList.contains('show')) {
+                // If already visible, fade out, then update content and fade in
+                linkContainer.classList.add('fade-out');
+                setTimeout(() => {
+                    linkContainer.innerHTML = `
+                        <p class="text-lg mb-2">Your unique invite link:</p>
+                        <a href="${inviteLink}" class="text-blue-400 hover:text-blue-500" target="_blank">${inviteLink}</a>
+                    `;
+                    linkContainer.classList.remove('fade-out');
+                    linkContainer.classList.add('show');
+                }, 500); // Delay should match the CSS transition duration
+            } else {
+                // If not visible, just show it
+                linkContainer.innerHTML = `
+                    <p class="text-lg mb-2">Your unique invite link:</p>
+                    <a href="${inviteLink}" class="text-blue-400 hover:text-blue-500" target="_blank">${inviteLink}</a>
+                `;
+                linkContainer.style.display = 'block';
+                setTimeout(() => {
+                    linkContainer.classList.add('show');
+                }, 10); // Small delay to ensure CSS transition works
+            }
+        });
+    </script>
+</body>
+</html>
