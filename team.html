@@ -6,7 +6,7 @@
     <meta name="description" content="Meet the team behind Zeo Bot. Discover the roles and contributions of the owner, testers, and helpers.">
     <meta name="theme-color" content="#4f46e5">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="Team">
+    <meta property="og:url" content="https://boyratata.github.io/Zeo/team/">
     <meta property="og:site_name" content="Zeo Bot">
     <meta property="og:title" content="Meet the Zeo Bot Team">
     <meta property="og:description" content="Learn about the key contributors to Zeo Bot, including the owner, testers, and helpers.">
@@ -35,14 +35,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
             position: relative;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
         }
         h1, h2, h3 {
             color: #cbd5e0;
             margin-bottom: 1rem;
+            animation: slideIn 0.5s ease-out;
         }
         p {
             line-height: 1.6;
             margin-bottom: 1rem;
+            animation: fadeInUp 0.5s ease-out;
         }
         .contributor {
             display: flex;
@@ -51,6 +55,7 @@
             padding: 10px;
             background: rgba(45, 62, 80, 0.8); /* Slightly different background */
             border-radius: 8px;
+            animation: slideInLeft 0.5s ease-out;
         }
         .contributor img {
             border-radius: 50%;
@@ -74,6 +79,7 @@
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
             margin-top: 1rem;
             backdrop-filter: blur(4px);
+            animation: bounce 1s infinite;
         }
         .button:hover {
             background-color: rgba(0, 255, 255, 0.9);
@@ -81,7 +87,7 @@
             box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
         }
         .nav-button {
-            position: absolute;
+            position: fixed;
             top: 10px;
             left: 10px;
             padding: 10px 20px;
@@ -131,14 +137,42 @@
         }
         .page {
             display: none;
+            opacity: 0;
+            animation: fadeInPage 1s forwards;
         }
         .page.active {
             display: block;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        @keyframes fadeInPage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <a href="Team" class="nav-button">Home</a>
+    <a href="https://boyratata.github.io/Zeo/team/" class="nav-button">Home</a>
     <a href="https://boyratata.github.io/Zeo/" class="nav-button">Home</a>
     <div class="container">
         <header>
