@@ -17,7 +17,7 @@
         body {
             background: url('https://github.com/boyratata/privacy-policy/blob/main/wallxx.png?raw=true') no-repeat center center fixed;
             background-size: cover;
-            color: #e2e8f0; /* Text color */
+            color: #e2e8f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -25,28 +25,28 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            position: relative; /* For positioning the buttons */
+            position: relative;
         }
         .container {
             max-width: 900px;
             margin: 20px;
             padding: 20px;
-            background: rgba(45, 62, 80, 0.9); /* Darker semi-transparent background */
+            background: rgba(45, 62, 80, 0.9);
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
         }
         h1, h2, h3 {
             color: #cbd5e0;
-            margin-bottom: 1rem; /* Spacing below headings */
+            margin-bottom: 1rem;
         }
         p {
             line-height: 1.6;
-            margin-bottom: 1rem; /* Spacing below paragraphs */
+            margin-bottom: 1rem;
         }
         ul {
-            margin-bottom: 1rem; /* Spacing below lists */
-            padding-left: 1.5rem; /* Indentation for lists */
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
         }
         a {
             color: #38b2ac;
@@ -62,33 +62,33 @@
             padding: 10px 20px;
             font-size: 16px;
             color: #ffffff;
-            background-color: rgba(0, 255, 255, 0.7); /* Semi-transparent cyan */
-            border: 2px solid rgba(0, 255, 255, 0.7); /* Same color as background */
+            background-color: rgba(0, 255, 255, 0.7);
+            border: 2px solid rgba(0, 255, 255, 0.7);
             border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-            margin-top: 1rem; /* Spacing above button */
-            margin-bottom: 1rem;  /* Spacing above button */
-            backdrop-filter: blur(4px); /* Blur effect */
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(4px);
         }
         .button:hover {
-            background-color: rgba(0, 255, 255, 0.9); /* More opaque on hover */
+            background-color: rgba(0, 255, 255, 0.9);
             color: white;
-            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Slightly stronger blur effect on hover */
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
         }
         .embed-container {
-            margin-top: 1rem; /* Spacing above the embed container */
+            margin-top: 1rem;
             padding: 1rem;
-            background: rgba(45, 62, 80, 0.9); /* Darker semi-transparent background */
+            background: rgba(45, 62, 80, 0.9);
             border-radius: 8px;
-            border: 1px solid rgba(45, 62, 80, 0.8); /* Matching border color */
-            display: none; /* Initially hidden */
+            border: 1px solid rgba(45, 62, 80, 0.8);
+            display: none;
             opacity: 0;
             transform: translateY(20px);
         }
         .embed-container.show {
-            display: block; /* Show when .show class is added */
+            display: block;
             opacity: 1;
             transform: translateY(0);
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -131,31 +131,33 @@
             padding: 10px 20px;
             font-size: 14px;
             color: rgba(255, 255, 255, 0.8);
-            background-color: rgba(0, 255, 255, 0.7); /* Semi-transparent cyan */
-            border: 2px solid rgba(0, 255, 255, 0.7); /* Same color as background */
+            background-color: rgba(0, 255, 255, 0.7);
+            border: 2px solid rgba(0, 255, 255, 0.7);
             border-radius: 8px;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-            margin-right: 10px; /* Space between buttons */
-            backdrop-filter: blur(4px); /* Blur effect */
+            margin-right: 10px;
+            backdrop-filter: blur(4px);
         }
         .nav-button:hover {
-            background-color: rgba(0, 255, 255, 0.9); /* More opaque on hover */
+            background-color: rgba(0, 255, 255, 0.9);
             color: white;
-            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Slightly stronger blur effect on hover */
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
         }
         .nav-container {
             position: absolute;
             top: 10px;
             left: 10px;
             display: flex;
-            gap: 10px; /* Space between the buttons */
+            gap: 10px;
         }
     </style>
 </head>
 <body>
-    <a href="https://boyratata.github.io/Zeo/" class="nav-button">Home</a>
-    <a href="https://boyratata.github.io/Zeo/team" class="nav-button">Contributors</a> <!-- Update the href with the actual link to the Contributors page when available -->
+    <div class="nav-container">
+        <a href="https://boyratata.github.io/Zeo/" class="nav-button">Home</a>
+        <a href="https://boyratata.github.io/Zeo/team" class="nav-button">Contributors</a>
+    </div>
     <div class="container fade-in">
         <header>
             <h1 class="text-4xl text-center">Invite Zeo Bot to Your Server 🚀</h1>
@@ -172,6 +174,15 @@
                     <li>Instant message deletion for those pesky inappropriate words. 🚫</li>
                     <li>Unique and playful roasting responses for repeat offenders. 😆</li>
                     <li>Customizable settings tailored to fit your server's vibe. ⚙️</li>
+                    <li>Slash commands for advanced control:
+                        <ul>
+                            <li>🔤 <code>/add-offensive-word</code> - Add a new offensive word to the list.</li>
+                            <li>❌ <code>/remove-offensive-word</code> - Remove an offensive word from the list.</li>
+                            <li>🔄 <code>/toggle-warnings</code> - Toggle the warning system on or off.</li>
+                            <li>🔥 <code>/toggle-roasts</code> - Enable or disable roast responses.</li>
+                            <li>⚠️ <code>/set-warning-limit</code> - Set the number of warnings before a roast is triggered.</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
             <section class="mt-8">
@@ -179,6 +190,7 @@
                 <p class="slide-up">Ready to bring Zeo Bot into your server? Click the button below to generate your unique invite link. Follow the easy steps to add Zeo Bot and unleash its awesome features on your server! 🌐</p>
                 <button id="generate-link" class="button">Generate Invite Link</button>
                 <div id="invite-link-container" class="embed-container"></div>
+            </section>
             </section>
             <section class="mt-8">
                 <h2 class="text-2xl">Contact Us 📞</h2>
